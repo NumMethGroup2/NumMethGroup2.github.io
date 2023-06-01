@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrix Solver</title>
+    <link rel="stylesheet" type="text/css" href="cramers.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Cramer's Rule Matrix Solver</h1>
+    <!-- inputs -->
+    <div id="mD" class="container centered-div">
+        <form id="matrixForm">
+            <table class="matrix" >
+                <tr>
+                    <th>X</th>
+                    <th>Y</th>
+                    <th>Z</th>
+                    <td></td>
+                    <th>D</th>
+                </tr>
+                <tr>
+                    <td><input class="number-input" required type="number" id="a1" /></td>
+                    <td><input class="number-input" required type="number" id="a2" /></td>
+                    <td><input class="number-input" required type="number" id="a3" /></td>
+                    <td></td>
+                    <td><input class="number-input" required type="number" id="d1" /></td>
+                </tr>
+                <tr>
+                    <td><input class="number-input" required type="number" id="b1" /></td>
+                    <td><input class="number-input" required type="number" id="b2" /></td>
+                    <td><input class="number-input" required type="number" id="b3" /></td>
+                    <td></td>
+                    <td><input class="number-input" required type="number" id="d2" /></td>
+                </tr>
+                <tr>
+                    <td><input class="number-input" required type="number" id="c1" /></td>
+                    <td><input class="number-input" required type="number" id="c2" /></td>
+                    <td><input class="number-input" required type="number" id="c3" /></td>
+                    <td rowspan="3"><div class="line"></div></td> 
+                    <td><input class="number-input" required type="number" id="d3" /></td> 
+                </tr>
+            </table>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- displays -->
+    <div id="display">
+        <h1 id="solution"></h1>
+        <div class="container" id="mainCont">
+            
+            <div id="mainMatrix">
+            </div>
+        </div>
+        <div class="container" id="detCont">
+            <div id="dx">
+                <div id="dxMatrix"></div>
+            </div>
+            <div id="dy">
+                <div id="dyMatrix"></div>
+            </div>
+            <div id="dz">
+                <div id="dzMatrix"></div>
+            </div>
+        </div>
+
+        <!-- final answers -->
+        <div id="final">
+            <div id="x">
+
+            </div>
+            <div id="y">
+
+            </div>
+            <div id="z">
+
+            </div>
+        </div>
+    </div>
+    <script src="cramers.js"></script>
+</body>
+</html>

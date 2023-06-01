@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+*{
+    font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    font-size: 20px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+table {
+    margin: 10px;
+}
+
+td {
+    padding:5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+input{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.determinant{
+    color: red;
+}
+
+.fanswer{
+    color: red;
+    border: 5px solid red;
+    border-radius: 5px;
+    padding:5px
+}
+
+.answer{
+    color: red;
+    border: 5px solid red;
+    border-radius: 5px;
+    padding:5px
+}
+
+.fontSize{
+    font-size: 20px;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matrix {
+    position: relative;
+}
+
+.matrix:before, .matrix:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    border: 1px solid #000;
+    width: 6px;
+    height: 100%;
+}
+
+.matrix:before {
+    left: -6px;
+    border-right: 0;
+}
+
+.matrix:after {
+    right: -6px;
+    border-left: 0;
+}
+
+.line{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 74%;
+    width: 1px; /* Adjust the width of the line as needed */
+    background-color: #000; /* Set the color of the line */
+}
+
+.centered-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.number-input::-webkit-outer-spin-button,.number-input::-webkit-inner-spin-button {
+    
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.fraction {
+    display: inline-block;
+    font-size: 16;
+
+}
+
+.numerator,.denominator {
+    display: block;
+    text-align: center;
+}
+
+.divider {
+    display: block;
+    text-align: center;
+    border-top: 5px solid black;
+    margin: 2px 0;
+}
+
+.adivider {
+    display: block;
+    text-align: center;
+    border-top: 5px solid red;
+    margin: 2px 0;
+}
+
+#mainCont,#detCont,#final{
+    margin: 5px;
+}
+
+#mainMatrix, #dxMatrix, #dzMatrix ,#dyMatrix {
+    display: flex;
+    padding: 5px;
+}
+
+#dx, #dy, #dz{
+    display: flex;
+    justify-content: center;
+    width: 480px;
+}
+
+#final{
+    display: grid;
+    place-items: center;
+
+}
