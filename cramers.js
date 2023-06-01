@@ -71,7 +71,7 @@ function solveMatrix() {
     dyMatrix.style.backgroundColor = '#92c0d7';
 
     dzMatrix.innerHTML = matrices[3];
-    dzMatrix.style.backgroundColor = '#b0';
+    dzMatrix.style.backgroundColor = '#b0d5c7';
 
     x.innerHTML = matrices[4];
     y.innerHTML = matrices[5];
